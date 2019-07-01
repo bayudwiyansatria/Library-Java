@@ -1,7 +1,3 @@
-[submodule "Library-ALI"]
-	path = Library-ALI
-	url = git@github.com:bayudwiyansatria/Library-ALI.git
-	master = master
 [submodule "Library-Apache-Spark"]
 	path = Library-Apache-Spark
 	url = git@github.com:bayudwiyansatria/Library-Apache-Spark.git
