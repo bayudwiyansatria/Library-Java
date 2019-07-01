@@ -13,3 +13,4 @@
 [submodule "Library-Java-Core"]
 	path = Library-Java-Core
 	url = git@github.com:bayudwiyansatria/Library-Java-Core.git
+	master = master
