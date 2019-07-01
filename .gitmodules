@@ -5,3 +5,4 @@
 [submodule "Library-Apache-Spark"]
 	path = Library-Apache-Spark
 	url = git@github.com:bayudwiyansatria/Library-Apache-Spark.git
+	master = master
