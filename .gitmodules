@@ -1,3 +1,4 @@
 [submodule "Library-ALI"]
 	path = Library-ALI
 	url = git@github.com:bayudwiyansatria/Library-ALI.git
+	master = master
