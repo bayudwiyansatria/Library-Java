@@ -1,0 +1,19 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx1024m'
+    mavenVersionOption: 'Default'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
+    mavenAuthenticateFeed: false
+    sonarQubeRunAnalysis: false
+    publishJUnitResults: false
+    goals: 'package'
