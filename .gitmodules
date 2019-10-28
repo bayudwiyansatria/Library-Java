@@ -14,3 +14,9 @@
 	path = Library-Java-Core
 	url = git@github.com:bayudwiyansatria/Library-Java-Core.git
 	master = master
+[submodule "Library-Java-Benchmark"]
+	path = Library-Java-Benchmark
+	url = git@github.com:bayudwiyansatria/Library-Java-Benchmark.git
+[submodule "Library-Java-EE-Core"]
+	path = Library-Java-EE-Core
+	url = git@github.com:bayudwiyansatria/Library-Java-EE-Core.git
