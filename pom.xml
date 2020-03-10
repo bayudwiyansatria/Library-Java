@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    MIT License
+
+    Copyright (c) 2019 Bayu Dwiyan Satria
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.bayudwiyansatria</groupId>
+		<artifactId>bayudwiyansatria</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>bayudwiyansatria-lib</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<modules>
+		<module>Library-Java-Core</module>
+		<module>Library-Machine-Learning</module>
+		<module>Library-Java-Benchmark</module>
+		<module>Library-Apache-Spark</module>
+		<module>Library-Apache-Hadoop</module>
+	</modules>
+	
+	<name>Bayu Dwiyan Satria - Library</name>
+	<description>
+		Java programming library involved with the full product lifecycle,
+		from strategic planning through to deployment and maintenance.
+	</description>
+	<url>https://github.com/bayudwiyansatria/Library-Java</url>
+	
+	<organization>
+		<name>Bayu Dwiyan Satria</name>
+		<url>https://www.bayudwiyansatria.com</url>
+	</organization>
+	<inceptionYear>2018</inceptionYear>
+	
+	<licenses>
+		<license>
+			<name>MIT LICENSE</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	<developers>
+		<developer>
+			<id>bayudwiyansatria</id>
+			<name>Bayu Dwiyan Satria</name>
+			<email>bayudwiyansatria@gmail.com</email>
+			<url>https://profile.bayudwiyansatria.com</url>
+			<organization>Bayu Dwiyan Satria</organization>
+			<organizationUrl>https://developer.bayudwiyansatria.com</organizationUrl>
+			<roles>
+				<role>owner</role>
+			</roles>
+			<timezone>Asia/Jakarta</timezone>
+			<properties>
+				<picUrl>https://en.gravatar.com/userimage/72544412/1d00d38dc66f275255af9aab3c125b99.jpg</picUrl>
+			</properties>
+		</developer>
+	</developers>
+	
+	<contributors/>
+	
+	<mailingLists>
+		<mailingList>
+			<name>Bayu Dwiyan Satria</name>
+			<subscribe>bayudwiyansatria@gmail.com</subscribe>
+			<unsubscribe>bayudwiyansatria@gmail.com</unsubscribe>
+			<post>bayudwiyansatria@gmail.com</post>
+			<archive>bayudwiyansatria@gmail.com</archive>
+		</mailingList>
+	</mailingLists>
+	
+	<scm>
+		<connection>scm:git:git://github.com/bayudwiyansatria/Library-Java.git</connection>
+		<developerConnection>scm:git:git@github.com:bayudwiyansatria/Library-Java.git</developerConnection>
+		<url>https://github.com/bayudwiyansatria/Library-Java</url>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<distributionManagement>
+		<repository>
+			<id>oss</id>
+			<name>The Central Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<id>oss</id>
+			<name>The Central Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<layout>default</layout>
+		</snapshotRepository>
+		<downloadUrl>https://search.maven.org/artifact/com.bayudwiyansatria/bayudwiyansatria-libs</downloadUrl>
+		<relocation/>
+		<site/>
+	</distributionManagement>
+	
+	<issueManagement>
+		<system>Github</system>
+		<url>https://github.com/bayudwiyansatria/Library-Java/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Github</system>
+		<url>https://github.com/bayudwiyansatria/Library-Java/actions</url>
+		<notifiers>
+			<notifier>
+				<type>mail</type>
+				<sendOnError>true</sendOnError>
+				<sendOnFailure>true</sendOnFailure>
+				<sendOnSuccess>false</sendOnSuccess>
+				<sendOnWarning>false</sendOnWarning>
+				<configuration/>
+			</notifier>
+		</notifiers>
+	</ciManagement>
+	
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo1.maven.org/maven2</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>azure</id>
+			<name>Azure Artifacts</name>
+			<url>https://pkgs.dev.azure.com/bayudwiyansatria/_packaging/bayudwiyansatria/maven/v1</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	
+	<pluginRepositories>
+		<pluginRepository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo1.maven.org/maven2</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+	
+	<properties>
+		<organization.logo>https://cdn.bayudwiyansatria.com/assets/logo-full.png</organization.logo>
+		
+		<!-- Project Properties -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.test.coverage.targetPercentage>70%</project.test.coverage.targetPercentage>
+		<project.build.outputTimestamp>2020-01-22T15:10:15Z</project.build.outputTimestamp>
+		
+		<!-- Allow modules to enable / disable certain build plugins easily. -->
+		<build.testJarPhase>prepare-package</build.testJarPhase>
+		<build.copyDependenciesPhase>none</build.copyDependenciesPhase>
+		<argument/>
+		
+		<!-- JVM Properties -->
+		<java.version>1.8</java.version>
+		<java.optimize>true</java.optimize>
+		
+		<maven.version>3.6.3</maven.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		
+		<gpg.executable>gpg</gpg.executable>
+		<gpg.useagent>true</gpg.useagent>
+		
+		<!-- Dependency Properties -->
+		<checkstyle.version>8.11</checkstyle.version>
+		<assembly.tarLongFileMode>posix</assembly.tarLongFileMode>
+		<sourceReleaseAssemblyDescriptor>source-release</sourceReleaseAssemblyDescriptor>
+		
+		<!-- Plugins Properties -->
+		<maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
+		<maven-assembly-plugin.version>3.2.0</maven-assembly-plugin.version>
+		<maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
+		<maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+		<maven-docck-plugin.version>1.1</maven-docck-plugin.version>
+		<maven-ear-plugin.version>3.0.1</maven-ear-plugin.version>
+		<maven-enforcer-plugin.version>1.4.1</maven-enforcer-plugin.version>
+		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+		<maven-help-plugin.version>3.2.0</maven-help-plugin.version>
+		<maven-install-plugin.version>2.5.2</maven-install-plugin.version>
+		<maven-invoker-plugin.version>3.2.1</maven-invoker-plugin.version>
+		<maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
+		<maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
+		<maven-plugin-plugin.version>3.5.2</maven-plugin-plugin.version>
+		<maven-project-info-reports-plugin.version>3.0.0</maven-project-info-reports-plugin.version>
+		<maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
+		<maven-remote-resources-plugin.version>1.7.0</maven-remote-resources-plugin.version>
+		<maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
+		<maven-scm-plugin.version>1.9.5</maven-scm-plugin.version>
+		<maven-scm-publish-plugin.version>3.0.0</maven-scm-publish-plugin.version>
+		<maven-site-plugin.version>3.7.1</maven-site-plugin.version>
+		<maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+		<maven-war-plugin.version>3.2.2</maven-war-plugin.version>
+		<maven-shade-plugin.version>3.1.1</maven-shade-plugin.version>
+		
+		<!-- Additional Plugin -->
+		<maven-license-plugin.version>3.0</maven-license-plugin.version>
+		<maven-versions-plugin.version>2.7</maven-versions-plugin.version>
+		
+		<!-- Third Party Plugin -->
+		<sonatype.plugins.version>1.6.7</sonatype.plugins.version>
+		<github.plugins.version>0.12</github.plugins.version>
+		<jacoco-maven-plugin.version>0.8.4</jacoco-maven-plugin.version>
+		
+		<!-- Main Properties-->
+		<scm.version>1.11.2</scm.version>
+		<surefire.version>2.22.0</surefire.version>
+		<junit.version>4.12</junit.version>
+		<hamcrest.version>1.3</hamcrest.version>
+		<slf4j.version>1.7.25</slf4j.version>
+	</properties>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+				<exclusions/>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		
+		<pluginManagement>
+			<plugins>
+				<!-- set versions of common plugins for reproducibility, ordered alphabetically -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-antrun-plugin</artifactId>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>${maven-assembly-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>${maven-clean-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven-compiler-plugin.version}</version>
+					<configuration>
+						<optimize>true</optimize>
+						<encoding>${project.build.sourceEncoding}</encoding>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+						<showWarnings>true</showWarnings>
+						<showDeprecation>true</showDeprecation>
+					</configuration>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>${maven-dependency-plugin.version}</version>
+					<configuration>
+						<ignoreNonCompile>true</ignoreNonCompile>
+						<failOnWarning>false</failOnWarning>
+					</configuration>
+					<executions>
+						<execution>
+							<id>analyze-dependencies</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>analyze</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>${maven-deploy-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-docck-plugin</artifactId>
+					<version>${maven-docck-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-ear-plugin</artifactId>
+					<version>${maven-ear-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>${maven-enforcer-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-failsafe-plugin</artifactId>
+					<version>${surefire.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-gpg-plugin</artifactId>
+					<version>${maven-gpg-plugin.version}</version>
+					<executions>
+						<execution>
+							<id>sign-artifacts</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>sign</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-help-plugin</artifactId>
+					<version>${maven-help-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>${maven-install-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-invoker-plugin</artifactId>
+					<version>${maven-invoker-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>${maven-jar-plugin.version}</version>
+					<configuration>
+						<archive>
+							<manifest>
+								<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+								<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							</manifest>
+						</archive>
+					</configuration>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>${maven-javadoc-plugin.version}</version>
+					<configuration>
+						<windowtitle>${project.name}, version ${project.version}</windowtitle>
+						<doctitle>${project.name}, version ${project.version}</doctitle>
+						<use>false</use>
+						<quiet>true</quiet>
+						<notimestamp>true</notimestamp>
+						<source>${java.version}</source>
+					</configuration>
+					<executions>
+						<execution>
+							<id>attach-javadoc</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-plugin-plugin</artifactId>
+					<version>${maven-plugin-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-project-info-reports-plugin</artifactId>
+					<version>${maven-project-info-reports-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>${maven-release-plugin.version}</version>
+					<configuration>
+						<useReleaseProfile>false</useReleaseProfile>
+						<goals>deploy</goals>
+						<arguments>-release ${arguments}</arguments>
+						<tag>v${project.version}</tag>
+						<tagNameFormat>v@{project.version}</tagNameFormat>
+						<autoVersionSubmodules>true</autoVersionSubmodules>
+					</configuration>
+					<dependencies>
+						<dependency>
+							<groupId>org.apache.maven.scm</groupId>
+							<artifactId>maven-scm-provider-gitexe</artifactId>
+							<version>${scm.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-remote-resources-plugin</artifactId>
+					<version>${maven-remote-resources-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>${maven-resources-plugin.version}</version>
+					<configuration>
+						<outputDirectory>${project.build.directory}/log-config</outputDirectory>
+						<resources>
+							<resource>
+								<filtering>false</filtering>
+								<directory>${project.basedir}/src/main/resources</directory>
+							</resource>
+						</resources>
+					</configuration>
+					<executions>
+						<execution>
+							<id>copy-config-files</id>
+							<phase>package</phase>
+							<goals>
+								<goal>copy-resources</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-scm-plugin</artifactId>
+					<version>${maven-scm-plugin.version}</version>
+					<configuration>
+						<goals>install</goals>
+					</configuration>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-scm-publish-plugin</artifactId>
+					<version>${maven-scm-publish-plugin.version}</version>
+					<dependencies>
+						<dependency>
+								<groupId>org.apache.maven.scm</groupId>
+							<artifactId>maven-scm-api</artifactId>
+							<version>${scm.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.maven.scm</groupId>
+							<artifactId>maven-scm-provider-gitexe</artifactId>
+							<version>${scm.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.maven.scm</groupId>
+							<artifactId>maven-scm-provider-svn-commons</artifactId>
+							<version>${scm.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.maven.scm</groupId>
+							<artifactId>maven-scm-provider-svnexe</artifactId>
+							<version>${scm.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>${maven-site-plugin.version}</version>
+					<configuration>
+						<locales>en</locales>
+					</configuration>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>${maven-source-plugin.version}</version>
+					<executions>
+						<execution>
+							<id>attach-sources</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>${maven-surefire.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-report-plugin</artifactId>
+					<version>${maven-surefire.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>${maven-war-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-shade-plugin</artifactId>
+					<version>${maven-shade-plugin.version}</version>
+					<executions>
+						<execution>
+							<id>bundle-and-repackage</id>
+							<phase>package</phase>
+							<goals>
+								<goal>shade</goal>
+							</goals>
+							<configuration>
+								<dependencyReducedPomLocation>${basedir}/target/dependency-reduced-pom.xml</dependencyReducedPomLocation>
+								<shadeTestJar>true</shadeTestJar>
+								<artifactSet>
+									<includes>
+										<include>*:*</include>
+									</includes>
+								</artifactSet>
+								<filters>
+									<filter>
+										<artifact>*:*</artifact>
+										<excludes>
+											<exclude>META-INF/*.SF</exclude>
+											<exclude>META-INF/*.DSA</exclude>
+											<exclude>META-INF/*.RSA</exclude>
+										</excludes>
+									</filter>
+								</filters>
+								<transformers>
+									<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+								</transformers>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.rat</groupId>
+					<artifactId>apache-rat-plugin</artifactId>
+					<version>${apache-rat-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>clirr-maven-plugin</artifactId>
+					<version>${clirr-maven-plugin.version}</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>versions-maven-plugin</artifactId>
+					<version>${maven-versions-plugin.version}</version>
+					<executions>
+						<execution>
+							<id>dependency-updates</id>
+							<phase>compile</phase>
+							<goals>
+								<goal>display-dependency-updates</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				
+				<plugin>
+					<groupId>com.github.github</groupId>
+					<artifactId>site-maven-plugin</artifactId>
+					<version>${github.plugins.version}</version>
+					<configuration>
+						<server>github</server>
+						<message>Building site for ${project.name}</message>
+						<merge>true</merge>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>site</goal>
+							</goals>
+							<phase>site</phase>
+						</execution>
+					</executions>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>${jacoco-maven-plugin.version}</version>
+					<configuration>
+						<destFile>${basedir}/target/coverage-reports/jacoco-unit.exec</destFile>
+						<dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
+					</configuration>
+					<executions>
+						<execution>
+							<id>coverage-initialize</id>
+							<goals>
+								<goal>prepare-agent</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>report-aggregate</id>
+							<phase>prepare-package</phase>
+							<goals>
+								<goal>report</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>coverage-report</id>
+							<phase>post-integration-test</phase>
+							<goals>
+								<goal>report</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				
+				<plugin>
+					<groupId>com.mycila</groupId>
+					<artifactId>license-maven-plugin</artifactId>
+					<version>${maven-license-plugin.version}</version>
+					<configuration>
+						<header>${project.basedir}/LICENSE</header>
+						<properties>
+							<project>${project.name}</project>
+							<founder>${project.organization.name}</founder>
+							<owner>${project.organization.name}</owner>
+							<year>${project.inceptionYear}</year>
+							<website>${project.organization.url}</website>
+						</properties>
+						<mapping>
+							<java>default_style</java>
+						</mapping>
+						<headerDefinitions>
+							<headerDefinition>${project.basedir}/header.xml</headerDefinition>
+						</headerDefinitions>
+						<excludes>
+							<exclude>*.png</exclude>
+							<exclude>*.txt</exclude>
+							<exclude>*.yml</exclude>
+							<exclude>*.yaml</exclude>
+							<exclude>.github/*</exclude>
+							<exclude>src/main/resources/*</exclude>
+						</excludes>
+						<includes>
+							<include>src/main/**/*</include>
+							<include>src/test/**/*</include>
+							<include>pom.xml</include>
+						</includes>
+					</configuration>
+					<executions>
+						<execution>
+							<id>add-licenses</id>
+							<phase>process-sources</phase>
+							<goals>
+								<goal>format</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-remote-resources-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>process-resource-bundles</id>
+						<goals>
+							<goal>process</goal>
+						</goals>
+						<configuration>
+							<resourceBundles>
+								<resourceBundle>org.apache:apache-jar-resource-bundle:1.4</resourceBundle>
+							</resourceBundles>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>enforce-maven-version</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>3.0.5</version>
+								</requireMavenVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+		</plugins>
+	</build>
+	
+	<reports/>
+	<reporting>
+		<outputDirectory>${project.basedir}/target/site</outputDirectory>
+		<plugins>
+			
+			<!-- Java Documentation -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${maven-javadoc-plugin.version}</version>
+			</plugin>
+			
+			<!-- Code Coverage -->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${jacoco-maven-plugin.version}</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>report</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		
+		</plugins>
+	</reporting>
+	
+	<profiles/>
+</project>
