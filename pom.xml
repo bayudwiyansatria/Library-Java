@@ -37,11 +37,11 @@
 	<packaging>pom</packaging>
 	
 	<modules>
-		<module>Library-Java-Core</module>
-		<module>Library-Machine-Learning</module>
-		<module>Library-Java-Benchmark</module>
-		<module>Library-Apache-Spark</module>
-		<module>Library-Apache-Hadoop</module>
+		<module>core</module>
+		<module>machine-learning</module>
+		<module>benchmark</module>
+		<module>spark</module>
+		<module>hadoop</module>
 	</modules>
 	
 	<name>Bayu Dwiyan Satria - Library</name>
