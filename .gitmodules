@@ -1,35 +1,25 @@
-[submodule "library-apache-spark"]
-	path = library-apache-spark
-	url = git@github.com:bayudwiyansatria/library-apache-spark.git
-	master = master
-[submodule "library-apache-hadoop"]
-	path = library-apache-hadoop
-	url = git@github.com:bayudwiyansatria/library-apache-hadoop.git
-	master = master
-[submodule "library-java-machine-learning"]
-	path = library-java-machine-learning
-	url = git@github.com:bayudwiyansatria/library-java-machine-learning.git
-	master = master
-[submodule "library-java-core"]
-	path = library-java-core
-	url = git@github.com:bayudwiyansatria/library-java-core.git
-	master = master
-[submodule "library-java-benchmark"]
-	path = library-java-benchmark
-	url = git@github.com:bayudwiyansatria/library-java-benchmark.git
-	master = master
 [submodule "hadoop"]
 	path = hadoop
 	url = git@github.com:bayudwiyansatria/library-apache-hadoop.git
+	branch = master
+	master = master
 [submodule "spark"]
 	path = spark
 	url = git@github.com:bayudwiyansatria/library-apache-spark.git
+	branch = master
+	master = master
 [submodule "machine-learning"]
 	path = machine-learning
 	url = git@github.com:bayudwiyansatria/library-java-machine-learning.git
+	branch = master
+	master = master
 [submodule "benchmark"]
 	path = benchmark
 	url = git@github.com:bayudwiyansatria/library-java-benchmark.git
+	branch = master
+	master = master
 [submodule "core"]
 	path = core
 	url = git@github.com:bayudwiyansatria/library-java-core.git
+	branch = master
+	master = master
