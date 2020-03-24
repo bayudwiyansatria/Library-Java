@@ -1,24 +1,35 @@
-[submodule "Library-Apache-Spark"]
-	path = Library-Apache-Spark
-	url = git@github.com:bayudwiyansatria/Library-Apache-Spark.git
+[submodule "library-apache-spark"]
+	path = library-apache-spark
+	url = git@github.com:bayudwiyansatria/library-apache-spark.git
 	master = master
-[submodule "Library-Apache-Hadoop"]
-	path = Library-Apache-Hadoop
-	url = git@github.com:bayudwiyansatria/Library-Apache-Hadoop.git
+[submodule "library-apache-hadoop"]
+	path = library-apache-hadoop
+	url = git@github.com:bayudwiyansatria/library-apache-hadoop.git
 	master = master
-[submodule "Library-Machine-Learning"]
-	path = Library-Machine-Learning
-	url = git@github.com:bayudwiyansatria/Library-Machine-Learning.git
+[submodule "library-java-machine-learning"]
+	path = library-java-machine-learning
+	url = git@github.com:bayudwiyansatria/library-java-machine-learning.git
 	master = master
-[submodule "Library-Java-Core"]
-	path = Library-Java-Core
-	url = git@github.com:bayudwiyansatria/Library-Java-Core.git
+[submodule "library-java-core"]
+	path = library-java-core
+	url = git@github.com:bayudwiyansatria/library-java-core.git
 	master = master
-[submodule "Library-Java-Benchmark"]
-	path = Library-Java-Benchmark
-	url = git@github.com:bayudwiyansatria/Library-Java-Benchmark.git
+[submodule "library-java-benchmark"]
+	path = library-java-benchmark
+	url = git@github.com:bayudwiyansatria/library-java-benchmark.git
 	master = master
-[submodule "Library-Java-EE-Core"]
-	path = Library-Java-EE-Core
-	url = git@github.com:bayudwiyansatria/Library-Java-EE-Core.git
-	master = master
+[submodule "hadoop"]
+	path = hadoop
+	url = git@github.com:bayudwiyansatria/library-apache-hadoop.git
+[submodule "spark"]
+	path = spark
+	url = git@github.com:bayudwiyansatria/library-apache-spark.git
+[submodule "machine-learning"]
+	path = machine-learning
+	url = git@github.com:bayudwiyansatria/library-java-machine-learning.git
+[submodule "benchmark"]
+	path = benchmark
+	url = git@github.com:bayudwiyansatria/library-java-benchmark.git
+[submodule "core"]
+	path = core
+	url = git@github.com:bayudwiyansatria/library-java-core.git
