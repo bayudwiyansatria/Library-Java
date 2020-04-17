@@ -37,7 +37,9 @@
 	<packaging>pom</packaging>
 	
 	<modules>
-		<module>core</module>
+		<module>core
+
+		</module>
 		<module>machine-learning</module>
 		<module>benchmark</module>
 		<module>spark</module>
@@ -49,7 +51,7 @@
 		Java programming library involved with the full product lifecycle,
 		from strategic planning through to deployment and maintenance.
 	</description>
-	<url>https://github.com/bayudwiyansatria/Library-Java</url>
+	<url>https://github.com/bayudwiyansatria/library-java</url>
 	
 	<organization>
 		<name>Bayu Dwiyan Satria</name>
@@ -96,9 +98,9 @@
 	</mailingLists>
 	
 	<scm>
-		<connection>scm:git:git://github.com/bayudwiyansatria/Library-Java.git</connection>
-		<developerConnection>scm:git:git@github.com:bayudwiyansatria/Library-Java.git</developerConnection>
-		<url>https://github.com/bayudwiyansatria/Library-Java</url>
+		<connection>scm:git:git://github.com/bayudwiyansatria/library-java.git</connection>
+		<developerConnection>scm:git:git@github.com:bayudwiyansatria/library-java.git</developerConnection>
+		<url>https://github.com/bayudwiyansatria/library-java</url>
 		<tag>HEAD</tag>
 	</scm>
 	
@@ -122,11 +124,11 @@
 	
 	<issueManagement>
 		<system>Github</system>
-		<url>https://github.com/bayudwiyansatria/Library-Java/issues</url>
+		<url>https://github.com/bayudwiyansatria/library-java/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>Github</system>
-		<url>https://github.com/bayudwiyansatria/Library-Java/actions</url>
+		<url>https://github.com/bayudwiyansatria/library-java/actions</url>
 		<notifiers>
 			<notifier>
 				<type>mail</type>
@@ -283,6 +285,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-antrun-plugin</artifactId>
+					<version>${maven-antrun-plugin.version}</version>
 				</plugin>
 				
 				<plugin>
