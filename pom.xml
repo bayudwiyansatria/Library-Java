@@ -24,12 +24,14 @@
     SOFTWARE.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.bayudwiyansatria</groupId>
 		<artifactId>bayudwiyansatria</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.0</version>
 	</parent>
 	
 	<artifactId>bayudwiyansatria-lib</artifactId>
@@ -37,13 +39,11 @@
 	<packaging>pom</packaging>
 	
 	<modules>
-		<module>core
-
-		</module>
+		<module>core</module>
 		<module>machine-learning</module>
 		<module>benchmark</module>
-		<module>spark</module>
 		<module>hadoop</module>
+		<module>spark</module>
 	</modules>
 	
 	<name>Bayu Dwiyan Satria - Library</name>
@@ -146,18 +146,6 @@
 			<id>central</id>
 			<name>Central Repository</name>
 			<url>https://repo1.maven.org/maven2</url>
-			<layout>default</layout>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>azure</id>
-			<name>Azure Artifacts</name>
-			<url>https://pkgs.dev.azure.com/bayudwiyansatria/_packaging/bayudwiyansatria/maven/v1</url>
 			<layout>default</layout>
 			<releases>
 				<enabled>true</enabled>
@@ -451,7 +439,7 @@
 					<configuration>
 						<useReleaseProfile>false</useReleaseProfile>
 						<goals>deploy</goals>
-						<arguments>-release ${arguments}</arguments>
+						<arguments>-release</arguments>
 						<tag>v${project.version}</tag>
 						<tagNameFormat>v@{project.version}</tagNameFormat>
 						<autoVersionSubmodules>true</autoVersionSubmodules>
