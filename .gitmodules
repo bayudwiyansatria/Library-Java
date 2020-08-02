@@ -1,11 +1,11 @@
 [submodule "hadoop"]
 	path = hadoop
-	url = git@github.com:bayudwiyansatria/library-apache-hadoop.git
+	url = git@github.com:bayudwiyansatria/library-java-apache-hadoop.git
 	branch = master
 	master = master
 [submodule "spark"]
 	path = spark
-	url = git@github.com:bayudwiyansatria/library-apache-spark.git
+	url = git@github.com:bayudwiyansatria/library-java-apache-spark.git
 	branch = master
 	master = master
 [submodule "machine-learning"]
