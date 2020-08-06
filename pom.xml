@@ -37,9 +37,7 @@
 	<packaging>pom</packaging>
 	
 	<modules>
-		<module>core
-
-		</module>
+		<module>core</module>
 		<module>machine-learning</module>
 		<module>benchmark</module>
 		<module>spark</module>
